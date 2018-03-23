@@ -91,25 +91,53 @@
 #     print (c,a,b)
 # else:
 #     print (c,b,a)
-print('Exercício 10')
+# print('Exercício 10')
 #Construa um programa que mostre menu exatamente como o exemplo abaixo e implemente as funções necessárias:
 #     == Menu de Opções ==
 #     1. Somar 2 números
 #     2. Potência de um número
 # 3. Raiz de grau N
 # == Opção escolhida:
-print('== Menu de Opções ==')
-print('1. Somar 2 números')
-print('2. Potência de um número')
-print('3. Raiz de grau N')
-op= int (input('== Opção escolhida:'))
-if op==1:
-    n1= float (input('Digite o primeiro número :'))
-    n2= float (input('Digite o segundo número: '))
-    s= n1+n2
-    print ('A soma é',s)
-elif op==2:
-    n= int (input("Digite um número: "))
-    p= int (input("Digite a potência: "))
-    r=(n**p)
-    print('A potência de', n, 'é',r)
+# print('== Menu de Opções ==')
+# print('1. Somar 2 números')
+# print('2. Potência de um número')
+# print('3. Raiz de grau N')
+# op= int (input('== Opção escolhida:'))
+# if op==1:
+#     n1= float (input('Digite o primeiro número :'))
+#     n2= float (input('Digite o segundo número: '))
+#     s= n1+n2
+#     print ('A soma é',s)
+# elif op==2:
+#     n= int (input("Digite um número: "))
+#     p= int (input("Digite a potência: "))
+#     r=(n**p)
+#     print('A potência de', n, 'é',r)
+# elif op==3:
+#     num= int (input ('Digite um número: '))
+#     raiz= int (input('Digite um número para a raiz: '))
+#     r= num**(1/raiz)
+#     print ('O resultado é', r)
+# else:
+#     print ('Escolha entre 1, 2 e 3')
+# print('Exercício 11')
+# #Uma loja está com uma promoção de 10% desconto em todos os seus produtos.
+# #Faça um programa que receba um valor, calcule e imprima o valor do desconto (em reais) e o valor final do produto após aplicar o desconto.
+# preco= float (input('Indique o valor do produto: '))
+# d10= (preco * (10/100))
+# print('O valor do produto é',preco - d10)
+print('Exercício 12')
+#Faça um programa que calcule o valor de imposto a ser pago a partir de um salário bruto.
+# Se o salário for maior que R$3.000,00 deverá ser cobrado 15% de imposto e se for menor, 7,5%.
+#Por fim, apresente o salário bruto (total), o valor de imposto e o salário líquido (o bruto menos o imposto).
+sal= float (input('Digite seu salário: '))
+im15= sal*(15/100)
+im7= sal * (7.5/100)
+if sal>= 3000.00:
+    print('Salário total=', sal)
+    print('Valor do imposto=',im15)
+    print('Salário líquido=', sal-im15)
+else:
+    print('Salário total=', sal)
+    print('Valor do imposto=',im7)
+    print('Salário líquido=', sal-im7)
